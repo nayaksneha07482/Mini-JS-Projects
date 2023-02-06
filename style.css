@@ -57,3 +57,80 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  /* Digital Clock */
+
+body section .digitalCont {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    color: #fff;
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+  body section .digitalCont .topCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body section .digitalCont .time {
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  body section .digitalCont .bottomCont p {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+  body section .digitalCont .topCont .icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 0.8rem;
+  }
+  body section .digitalCont .topCont .icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  body section .digitalCont .topCont .icon.active {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  body section .digitalCont .topCont .icon .menu {
+    height: 3px;
+    width: 3px;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    transform: rotate(90deg);
+  }
+  body section .digitalCont .topCont .icon .menu::after,
+  body section .digitalCont .topCont .icon .menu::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+  }
+  body section .digitalCont .topCont .icon .menu::after {
+    top: -8px;
+  }
+  body section .digitalCont .topCont .icon .menu::before {
+    bottom: -8px;
+  }
+  
+  @media (max-width: 600px) {
+    section {
+      flex-direction: column;
+    }
+    body section .digitalCont {
+      margin-left: 0% !important;
+      text-align: center !important;
+      position: relative;
+    }
+    body section .digitalCont .topCont .icon {
+      position: absolute;
+      right: -20px;
+    }
+  }
+  
