@@ -1,0 +1,183 @@
+body {
+    margin: 0px;
+    width: 100%;
+    font-family: "Lobster", cursive;
+    padding: 0px;
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/eb482c64-e879-4e88-9ddc-d839cb7d1232/d03a05fb-39a4-4594-b16c-ddc39f35f5bd/IN-en-20220131-popsignuptwoweeks-perspective_alpha_website_large.jpg")
+      no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(255, 153, 0);
+    position: relative;
+  }
+  
+  /* Navbar */
+  
+  .navbar {
+    height: 80px;
+    background-color: rgb(0, 0, 0, 0.5);
+    font-size: 2.8em;
+    font-weight: bold;
+    padding: 8px 30px;
+    box-sizing: border-box;
+    font-family: "Lobster", cursive;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  span {
+    font-size: 0.4em;
+  }
+  
+  #searchDiv {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin-right: 40px;
+    background-color: rgb(0, 0, 0, 0.3);
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 25px;
+    height: 50px;
+    width: 450px;
+  }
+  
+  #query {
+    height: 35px;
+    border-radius: 25px;
+    width: 400px;
+    background-color: rgb(0, 0, 0, 0);
+    color: rgb(255, 153, 0);
+    font-size: 0.6em;
+    border: none;
+    padding-left: 15px;
+  }
+  
+  #query:focus {
+    outline: none;
+  }
+  
+  ::placeholder {
+    font-family: "Lobster", cursive;
+    color: rgb(255, 153, 0);
+  }
+  
+  #icon {
+    color: rgb(255, 153, 0);
+    font-size: 1.9em;
+  }
+  
+  #btn {
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    width: 50px;
+  }
+  
+  /* Main container */
+  
+  #container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+  }
+  
+  #searchContainer {
+    width: 45%;
+    margin-top: 120px;
+    height: 400px;
+    box-shadow: 0px 0px 70px rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 5em;
+    margin-top: 10px;
+  }
+  
+  #search {
+    width: 65%;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: -20px;
+    padding-left: 10px;
+    font-size: 1.3em;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgb(95, 57, 0);
+  }
+  
+  #search:focus {
+    outline: none;
+  }
+  
+  
+  #srchBtn {
+    background-color: rgb(255, 153, 0);
+    border: 1px solid rgb(255, 153, 0);
+    border-radius: 20px;
+    height: 50px;
+    width: 25%;
+    color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+    font-family: "Lobster", cursive;
+  }
+  
+  #srchBtn:hover {
+    border: 2px solid white;
+  }
+  
+  #movieInfo {
+    width: 45%;
+    margin-top: 120px;
+    height: 400px;
+    box-shadow: 0px 0px 50px rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  
+  #card {
+    display: flex;
+    box-sizing: border-box;
+  }
+  
+  #imageDiv {
+    height: 100%;
+  }
+  
+  img {
+    height: 99.5%;
+    width: 265px;
+  }
+  
+  #infoDiv {
+    padding-left: 15px;
+  }
+  
+  #recDiv {
+    display: flex;
+    gap: 80px;
+  }
+  
+  p {
+    font-size: 1.75em;
+    margin-top: 7px;
+  }
+  
+  #gif {
+    width: 100%;
+    opacity: 0.8;
+    border-radius: 25px;
+  }
