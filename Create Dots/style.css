@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid red; */
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    overflow: hidden;
+  }
+  /* .circle {
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 350ms ease-in-out;
+    color: black;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn {
+    all: unset;
+    cursor: pointer;
+    height: 20px;
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 1em 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: all 350ms ease-in-out;
+  }
+  
+  .btn:hover {
+    scale: 0.9;
+  } */
+  
+  .box {
+    height: 75%;
+    width: 90%;
+    border: 2px solid white;
+    background-color: white;
+    box-shadow: 2px 2px 2px #e7e7e7, -2px -2px 2px #e7e7e7;
+    border-radius: 15px;
+    margin: 5px;
+    cursor: pointer;
+    position: relative;
+  }
+  .circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: scale(0);
+    transition: transform 500ms ease-in-out;
+  }
+  .btn {
+    all: unset;
+    padding: 1em 2em;
+    font-size: 1.2rem;
+    background-color: white;
+    font-weight: bold;
+    color: rgb(17, 1, 87);
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 15px;
+  }
+  .btn:active {
+    scale: 0.95;
+  }
+  .pop_up {
+    width: 90%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #22202093;
+    color: rgb(247, 247, 247);
+    margin: 5px;
+  }
+  
