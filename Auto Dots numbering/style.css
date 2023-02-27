@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid red; */
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    overflow: hidden;
+    
+  }
+  .circle {
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 350ms ease-in-out;
+    color: black;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn {
+    all: unset;
+    cursor: pointer;
+    height: 20px;
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 1em 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: all 350ms ease-in-out;
+  }
+  
+  .btn:hover {
+    scale: 0.9;
+  }
+  
