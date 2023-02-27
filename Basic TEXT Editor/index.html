@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Text Editort</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav_left">
+            <a class="logo_img" href="./index.html"><img class="logo" src="./photos/logo.png" alt="logo.png"></a>
+        </div>
+        <div class="nav_right">
+            <input id="search" type="text" placeholder="Search Here">
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="text_section">
+            <main>
+                <textarea class="textArea" placeholder="Enter your text here to analyze"></textarea>
+            </main>
+            <section class="preview_section">
+                <div class="text_info">
+                    
+                    <p class = "chars" >Characters : 0</p>
+                    <p class = "words">Words : 0 </p>
+                    <p class = "time">Approx time to read : 0</p>
+                </div>
+                
+                <p class="preview">Preview Your Text Here</p>
+            </section>
+        </div>
+        <section class="button_container">
+            <button class="btn" data-upper>Convert to Upper Case</button>
+            <button class="btn" data-lower>Convert to Lower Case</button>
+            <button class="btn" data-title>Convert to Title Case</button>
+            <button class="btn" data-remove-space>Remove Extra Spaces</button>
+            <button class="btn" data-copy>Copy to Clipboard</button>
+            <button class="btn" data-clear>Clear Text</button>
+        </section>
+    </div>
+    <footer>
+        Made with 💖 by Sneha
+    </footer>
+
+</body>
+
+</html>
