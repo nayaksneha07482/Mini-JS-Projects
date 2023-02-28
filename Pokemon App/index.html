@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Mania | Get Info of your Favourite Pokemon</title>
+
+    <!-- Link all CSS Files -->
+    <link rel="stylesheet" href="./CSS/Buttons/style.css" />
+    <link rel="stylesheet" href="./CSS/Footer/style.css" />
+    <link rel="stylesheet" href="./CSS/Main Content/style.css" />
+    <link rel="stylesheet" href="./CSS/Navbar/style.css" />
+    <link rel="stylesheet" href="./CSS/Spinning Loader/style.css" />
+    <link rel="stylesheet" href="./CSS/Know More/style.css">
+
+
+    <!-- Link all JS Files -->
+    <script
+      type="module"
+      src="./JS/Constants Variables/index.js"
+      defer
+    ></script>
+    <script
+      type="module"
+      src="./JS/Fetch Pokemon Cards/index.js"
+      defer
+    ></script>
+
+    <script type="module" src="./JS/During Fetching/index.js" defer></script>
+    <script
+      type="module"
+      src="./JS/Evolution & Know More/index.js"
+      defer
+    ></script>
+    <script type="module" src="./JS/Pagination/index.js" defer></script>
+    <script type = "module" src="./JS/Search Functionality/index.js" defer ></script>
+  </head>
+  <body>
+    <!-- Header and Navbar -->
+    <header>
+      <nav id="navbar">
+        <a class="logo" href="./index.html">
+          <div class="circle">
+            <img
+              src="https://i.pinimg.com/736x/b1/06/b3/b106b356085297efb35b87ef9122e03a.jpg"
+              alt=""
+            />
+          </div>
+          <img
+            id="pokemonLogo"
+            src="https://seeklogo.com/images/P/Pokemon-logo-497D61B223-seeklogo.com.png"
+            alt="Pokemon"
+          />
+          <div class="circle">
+            <img
+              src="https://i.pinimg.com/736x/b1/06/b3/b106b356085297efb35b87ef9122e03a.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+        <div class="searchFieldContainer">
+          <input id="searchInput" type="text" placeholder="Search Pokemon" />
+          <button id = "searchBtn" class="btn">Search</button>
+        </div>
+      </nav>
+    </header>
+    <button id="back" class="buttonPagination" role="button">Back</button>
+    <h1 id = "pokemonChain">Evolution Chain of Pokemon</h1>
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <!-- Main Content -->
+    <div class="container"></div>
+    <!-- Pagination -->
+    <div id="pagination" class="animation2">
+      <button id="prev" class="buttonPagination" role="button">Prev</button>
+      <button id="next" class="buttonPagination" role="button">Next</button>
+    </div>
+    <!-- Footer -->
+    <footer class="animation2">
+      <div class="social">
+        <h2>Made with ❣️ by Savinder</h2>
+        <p>Follow me on social media</p>
+        <ul class="wrapper">
+          <a
+            href="https://www.linkedin.com/in/savinder-singh-718a28257/"
+            target="_blank"
+          >
+            <li class="icon linkedin">
+              <span class="tooltip">LinkedIn</span>
+              <span><i class="fab fa-linkedin"></i></span>
+            </li>
+          </a>
+          <a href="https://github.com/SavinderSingh77" target="_blank">
+            <li class="icon github">
+              <span class="tooltip">GitHub</span>
+              <span><i class="fab fa-github"></i></span>
+            </li>
+          </a>
+
+          <a href="https://twitter.com/Savindersingh77" target="_blank">
+            <li class="icon twitter">
+              <span class="tooltip">Twitter</span>
+              <span><i class="fab fa-twitter"></i></span>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
