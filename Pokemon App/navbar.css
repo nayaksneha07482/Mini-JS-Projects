@@ -1,0 +1,179 @@
+/*css reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --color-white-001: #fff;
+  }
+  body {
+    width: 100vw;
+    max-width: 1440px;
+  
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+  }
+  header {
+    width: 100%;
+    padding: 1em 2em;
+    background-color: var(--color-white-001);
+  }
+  #navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle {
+    height: 35px;
+    display: flex;
+    mix-blend-mode: darken;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  #pokemonLogo {
+    width: 40%;
+    min-width: 150px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .searchFieldContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 35%;
+  }
+  
+  #searchInput {
+    padding: 1em 1.5em;
+    border: none;
+    outline: none;
+    outline: 1px solid #6b7280;
+    border-radius: 27px;
+    width: 100%;
+    min-width: 250px;
+    font-size: 1rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  #searchInput:focus {
+    border: 1px solid #1e768b;
+  }
+  
+  #searchInput::placeholder {
+    font-size: 1.05rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .btn {
+      padding: 0.75rem 1.5rem;
+    }
+    #navbar {
+      justify-content: center;
+      align-items: center;
+    }
+    .searchFieldContainer {
+      flex-wrap: wrap;
+    }
+  }
+  
+  .lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+  }
+  .lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #1a1919;
+    margin: -4px 0 0 -4px;
+  }
+  .lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+  }
+  .lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+  }
+  .lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+  }
+  .lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+  }
+  .lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+  }
+  .lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+  }
+  .lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+  }
+  .lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+  }
+  .lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+  }
+  .lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+  }
+  .lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+  }
+  .lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+  }
+  .lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+  }
+  .lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+  }
+  .lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+  }
+  .lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+  }
+  @keyframes lds-roller {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
